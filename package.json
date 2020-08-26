@@ -6,6 +6,6 @@
     "react-dom": "^16.13.1"
   },
   "scripts": {
-    "vercel-build": "bash ./scripts/bundle-deps.sh"
+    "vercel-build": "bash ./scripts/bundle-deps.sh && next build"
   }
 }
