@@ -1,11 +1,10 @@
 {
   "dependencies": {
-    "canvas": "^2.6.1",
+    "@cprecioso/canvas-text-layout": "^1.0.1",
+    "gifencoder": "^2.0.1",
     "next": "^9.5.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "scripts": {
-    "vercel-build": "bash ./scripts/bundle-deps.sh && next build"
+    "react-dom": "^16.13.1",
+    "skia-canvas": "^0.9.19"
   }
 }
