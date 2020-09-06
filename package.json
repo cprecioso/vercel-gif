@@ -4,5 +4,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "skia-canvas": "^0.9.19"
+  },
+  "scripts": {
+    "vercel-build": "bash ./scripts/bundle-deps.sh && next build"
   }
 }
