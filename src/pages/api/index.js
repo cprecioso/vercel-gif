@@ -1,6 +1,6 @@
 // @ts-check
 
-import { Canvas, FontLibrary } from "skia-canvas"
+import { Canvas } from "skia-canvas"
 
 const SIZE = 500
 
@@ -8,9 +8,9 @@ export default /** @type {import("next").NextApiHandler} */ (async (
   req,
   res
 ) => {
-  FontLibrary.use("Asap", [
+  /*   FontLibrary.use("Asap", [
     "/Users/carlos/Development.localized/vercel-gif/AsapCondensed-Medium.ttf",
-  ])
+  ]) */
 
   const canvas = new Canvas(SIZE, SIZE)
   const ctx = canvas.getContext("2d")
@@ -22,9 +22,9 @@ export default /** @type {import("next").NextApiHandler} */ (async (
   ctx.fillStyle = "blue"
   ctx.fillRect(SIZE * (1 / 4), SIZE * (1 / 4), SIZE, SIZE)
 
-  ctx.fillStyle = "white"
+  /*   ctx.fillStyle = "white"
   ctx.font = "50px Asap"
-  ctx.fillText("Hola", SIZE / 4, SIZE / 4)
+  ctx.fillText("Hola", SIZE / 4, SIZE / 4) */
 
   res.setHeader("Content-Type", "image/png")
   res.send(canvas.toBuffer("image/png"))
